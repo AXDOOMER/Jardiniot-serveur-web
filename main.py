@@ -14,9 +14,6 @@ visionnement = ("<body><h1>Visionnement du status</h1>" +
     menu +
     "</body>")
 
-#def hello_world(request):
-#    return Response('<body><h1>Hello World! %(name)s!</h1></body>' % request.matchdict)
-
 def vision(request):
     return Response(visionnement % request.matchdict)
 
