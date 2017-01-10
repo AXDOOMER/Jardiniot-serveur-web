@@ -12,3 +12,10 @@ Serveur web pour jardiniot
 4. Aller dans le répertoire: `cd Jardiniot-serveur-web/`
 5. Exécuter le serveur de la façon suivante: `python ./main.py`
 6. Se connecter au serveur par le furteur. L'adresse est `http://localhost:8080/`. 
+
+### Aide avec Pyramid
+
+Ici: http://docs.pylonsproject.org/projects/pyramid/en/latest/index.html#index
+Et ici: http://docs.pylonsproject.org/projects/pyramid/en/latest/quick_tour.html
+
+
