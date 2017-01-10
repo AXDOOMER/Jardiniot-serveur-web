@@ -15,7 +15,8 @@ Serveur web pour jardiniot
 
 ### Aide avec Pyramid
 
-Ici: http://docs.pylonsproject.org/projects/pyramid/en/latest/index.html#index
-Et ici: http://docs.pylonsproject.org/projects/pyramid/en/latest/quick_tour.html
+Ici: 
+* http://docs.pylonsproject.org/projects/pyramid/en/latest/index.html#index
+* http://docs.pylonsproject.org/projects/pyramid/en/latest/quick_tour.html
 
 
