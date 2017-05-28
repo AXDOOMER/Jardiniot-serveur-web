@@ -1,6 +1,7 @@
 from wsgiref.simple_server import make_server
 from pyramid.config import Configurator
 from pyramid.response import Response
+import markdown
 
 menu = "<hr/>Menu: <a href=\"/\">Index</a> | <a href=\"/vision/\">Visionnement</a><hr/>"
 
@@ -33,6 +34,10 @@ status = ("<body><h1>Visionnement du status du jardin %(name)s</h1>" +
     "</table> <br/>" +
     "</body>")
 
+input_file = open('README.md', 'r')
+text = input_file.read()
+mdtest = markdown.markdown(text)
+
 def vision(request):
     return Response(visionnement % request.matchdict)
 
@@ -41,6 +46,9 @@ def jardin(request):
 
 def index(request):
     return Response(principale % request.matchdict)
+
+def test(request):
+    return Response(mdtest % request.matchdict)
 
 if __name__ == '__main__':
     config = Configurator()
@@ -52,6 +60,9 @@ if __name__ == '__main__':
 
     config.add_route('index', '/')
     config.add_view(index, route_name='index')
+
+    config.add_route('test', '/test')
+    config.add_view(test, route_name='test')
 
     app = config.make_wsgi_app()
     server = make_server('0.0.0.0', 8080, app)
