@@ -6,6 +6,11 @@ code {
     background-color: lightblue;
 }
 
+table {
+    background-color: white;
+    /*border-collapse: collapse;*/
+}
+
 h1 {
     color: blue;
 }
