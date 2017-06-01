@@ -27,7 +27,8 @@ visionnement = ("<body><h1>Visionnement du status</h1>" +
     "<a href=\"/jardin/1\">1</a> | <a href=\"/jardin/2\">2</a> | <a href=\"/jardin/3\">3</a>" +
     "</body>")
 
-status = ("<body><h1>Visionnement du status du jardin %(name)s</h1>" +
+status = ("<body><h1>Visionnement du status d'un jardin</h1>" +
+    "<h3>Jardin %(name)s</h3>" +
     menu +
     "<table border=\"2\">" +
     "<tr><th>Temperature</th><th>22 °C</th></tr>" +
