@@ -22,7 +22,7 @@ visionnement = ("<body><h1>Visionnement du status</h1>" +
     "<tr><th>Ventillation</th><th>Aucun probleme</th></tr>" +
     "<tr><th>Humidité</th><th>Normale</th></tr>" +
     "<tr><th>Lampe</th><th>Tous en mode nuit</th></tr>" +
-    "</table> <br/>" +
+    "</table> <br/><br/>" +
     "<h4>Choisir un jardin:</h4>" +
     "<a href=\"/jardin/1\">1</a> | <a href=\"/jardin/2\">2</a> | <a href=\"/jardin/3\">3</a>" +
     "</body>")
@@ -37,6 +37,8 @@ status = ("<body><h1>Visionnement du status d'un jardin</h1>" +
     "<tr><th>Lampe</th><th>Activée</th></tr>" +
     "</table> <br/>" +
     "<a href=\"/vision/\">Retour...</a>" +
+    "<h4>Choisir un autre jardin:</h4>" +
+    "<a href=\"/jardin/1\">1</a> | <a href=\"/jardin/2\">2</a> | <a href=\"/jardin/3\">3</a>" +
     "</body>")
 
 mdfile = open('README.md', 'r')
