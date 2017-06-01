@@ -1,6 +1,8 @@
-# Jardiniot-serveur-web
-Serveur web pour jardiniot
+# Jardiniot-site-web
 
+Site web pour jardiniot (prototype de site web avec Python)
+
+Oui, il est laid. C'est juste un test. 
 
 ### Installation
 

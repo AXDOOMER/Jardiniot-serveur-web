@@ -11,7 +11,7 @@ principale = ("<body><h1>Accueil</h1>" +
     "<h3>Bienvenu sur votre serveur Jardiniot!</h3>" +
     menu +
     "La communication est établie avec vos jardins. Il y a <b>3</b> jardins détectés. " +
-    "<br/><br/><img src=\"/static/2705.png\" alt=\"image failed to load\"/>" +
+    "<br/><br/><img src=\"/static/vert.png\" alt=\"image failed to load\"/>" +
     "</body>")
 
 visionnement = ("<body><h1>Visionnement du status</h1>" +
