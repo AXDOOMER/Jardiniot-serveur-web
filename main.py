@@ -11,6 +11,7 @@ principale = ("<body><h1>Accueil</h1>" +
     "<h3>Bienvenu sur votre serveur Jardiniot!</h3>" +
     menu +
     "La communication est établie avec vos jardins. Il y a <b>3</b> jardins détectés. " +
+    "<br/><br/><img src=\"/static/2705.png\" alt=\"image failed to load\"/>" +
     "</body>")
 
 visionnement = ("<body><h1>Visionnement du status</h1>" +
@@ -34,14 +35,12 @@ status = ("<body><h1>Visionnement du status du jardin %(name)s</h1>" +
     "<tr><th>Humidité</th><th>50 %%</th></tr>" +
     "<tr><th>Lampe</th><th>Activée</th></tr>" +
     "</table> <br/>" +
+    "<a href=\"/vision/\">Retour...</a>" +
     "</body>")
 
 mdfile = open('README.md', 'r')
 md = mdfile.read()
 mdtest = markdown.markdown(md)
-
-#cssfile = open('static/styles.css', 'r')
-#css = cssfile.read()
 
 def vision(request):
     return Response(style + visionnement % request.matchdict)
